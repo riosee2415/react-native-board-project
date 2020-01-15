@@ -4,15 +4,27 @@ import publicColor from '../assets/js/publicColor';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+  },
+  guideTxt: {
+    color: publicColor.blueGray,
+  },
+  input: {
+    height: 30,
+    width: 120,
+    borderBottomColor: 'white',
+    borderBottomWidth: 1,
+    color: '#ffffff',
+    padding: 10,
   },
 });
 
 const InputBox = () => {
   return (
     <View style={styles.container}>
-      <Text>dummy</Text>
-      <Text>dummy</Text>
+      <Text style={styles.guideTxt}>dummy</Text>
+      <TextInput style={styles.input} />
     </View>
   );
 };

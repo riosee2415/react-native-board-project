@@ -30,7 +30,7 @@ class Login extends React.Component {
             <Text style={styles.txt}>SIGN IN</Text>
           </View>
           <View style={styles.loingDown}>
-            <View>
+            <View style={styles.inputContainer}>
               <InputBox />
             </View>
 
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   loingDown: {
     flex: 2,
     justifyContent: 'flex-start',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     backgroundColor: '#0b0b0b',
     opacity: 0.9,
     borderTopLeftRadius: 30,
@@ -83,6 +83,10 @@ const styles = StyleSheet.create({
     marginTop: 30,
     fontSize: 30,
     color: '#fff',
+  },
+  inputContainer: {
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
   },
 });
 
