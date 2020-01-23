@@ -31,7 +31,8 @@ class Login extends React.Component {
           </View>
           <View style={styles.loingDown}>
             <View style={styles.inputContainer}>
-              <InputBox />
+              <InputBox txt="ID" />
+              <InputBox txt="PASSWORD" isPassword={true} />
             </View>
 
             <View>
@@ -69,7 +70,7 @@ const styles = StyleSheet.create({
   loingDown: {
     flex: 2,
     justifyContent: 'flex-start',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     backgroundColor: '#0b0b0b',
     opacity: 0.9,
     borderTopLeftRadius: 30,
@@ -85,7 +86,11 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   inputContainer: {
-    alignItems: 'flex-start',
+    width: width / 1.4,
+    flex: 1,
+    flexDirection: 'column',
+    marginTop: 50,
+    alignItems: 'center',
     justifyContent: 'flex-start',
   },
 });
